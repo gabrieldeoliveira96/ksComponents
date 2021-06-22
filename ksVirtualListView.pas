@@ -1819,7 +1819,7 @@ end;
 
 procedure TksVListItem.DeleteCalcChange(Sender: TObject);
 begin
-  if FOwner <> nil then
+  if (FOwner <> nil) and (FDeleteCalc <> nil) then
   begin
     try
       if FDeleteCalc.ViewportPositionF.Length >= 0 then
